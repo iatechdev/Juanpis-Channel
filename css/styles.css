@@ -257,17 +257,18 @@ li:hover {
 }
 
 .cont-video {
-  background: -webkit-gradient(linear, left top, right top, from(#0E1C2C), color-stop(#0E1C2C), to(#96D6F7));
+ 
   background: linear-gradient(to right, #0E1C2C, #0E1C2C, #96D6F7);
 }
 
 .banner-news {
-  background-image: url("../img/opacity.png");
+  background-image: url("../img/jpnews.jpg");
   background-repeat: no-repeat;
 }
 
+
 .banner-gomelo {
-  background-image: url("../img/opacity.png");
+   background-image: url("../img/opacity.png");
   background-repeat: no-repeat;
 }
 
@@ -275,6 +276,7 @@ li:hover {
   background-image: url("../img/opacity.png");
   background-repeat: no-repeat;
 }
+
 
 .banner-heros {
   background-image: url("../img/opacity.png");
