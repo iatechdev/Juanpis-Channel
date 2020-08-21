@@ -9,28 +9,82 @@
       integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
       crossorigin="anonymous"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
     <title>Juanpis Channel</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header-desktop">
       <div class="container header mt-4 mb-2">
-        <img src="./img/Grupo 69.png" alt="" />
+        <img class="header-img" src="./img/icon-oficial.png" alt="" />
         <div class="header-two">
-          <p class="mt-3 mr-5">INGRESAR</p>
-          <img
-            class="btn-principal"
-            src="./img/BTN_principal_color.png"
-            alt=""
-          />
+         <a href="./views/interna.html"><button type="button" class="btn-ingresar mr-3">INGRESAR</button></a>
+        <button class="btn-princip"type="button">SUSCRIBIRSE</button>
         </div>
       </div>
     </header>
+    <div class="header-res-int">
+      <nav class="navbar  navbar-dark header-responsive">
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExample01"
+          aria-controls="navbarsExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img class="header-img" src="./img/icon-oficial.png" alt="" />
+        <div class="header-two d-flex">
+          <p class="mt-3 mr-5">INGRESAR</p>
+          <img class="btn-principal" src="./img/BTN_principal_color.png" alt="" />
+        </div>
+  
+        <div class="navbar-collapse collapse" id="navbarsExample01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active st">
+              <a class="nav-link" href="#"
+                >INICIO <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hablemos">HABLEMOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contenido">MI CONTENIDO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#membresia">MEMBRESIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#questions">PREGUNTAS FRECUENTES</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  
     <hr class="hr" />
 
     <ul class="container ul">
-      <a href="#"><li> INICIO</li></a>
-      <a href=""> <li>HABLEMOS</li></a>
+      <a href="#"><li>INICIO</li></a>
+      <a href="#hablemos"> <li>HABLEMOS</li></a>
       <a href="#contenido"><li>MI CONTENIDO</li></a>
       <a href="#membresia"><li>MEMBRESIA</li></a>
       <a href="#questions"><li>PREGUNTAS FRECUENTES</li></a>
@@ -51,27 +105,41 @@
             </p>
           </div>
         </div>
-        <div class="mt-3 mb-5  videos">
-          <img class="mr-2 mb-5" src="./img/video con etiqueta dorado.png" alt="" />
-          <img class="mr-2 mb-5" src="./img/video con etiqueta crema.png" alt="" />
+        <div class="mt-3 mb-5 videos">
+          <img
+            class="mr-2 mb-5"
+            src="./img/video con etiqueta dorado.png"
+            alt=""
+          />
+          <img
+            class="mr-2 mb-5"
+            src="./img/video con etiqueta crema.png"
+            alt=""
+          />
           <img class="mr-2 mb-5" src="./img/claro.png" alt="" />
         </div>
       </div>
+      <div class="container-scroll">
+        <img src="./img/li.png" alt="" />
+        <p>BAJE PARA QUE VEA COSAS MÁS TOP</p>
+      </div>
     </div>
 
-    <div class="banner-two">
+    <div class="banner-two" id="hablemos">
       <div class="container mt-5 mb-5">
         <h1>
           ¿QUIERES SABER QUÉ <br />
           TAN TOP ERES?
         </h1>
-        <input class="mt-5"type="text" placeholder="DIME CUÁL ES TU APELLIDO" />
-        <img class="ml-2" src="./img/BTN_principal_outline_light.png" alt="" />
+        <input
+          class="mt-5"
+          type="text"
+          placeholder="DIME CUÁL ES TU APELLIDO"
+        />
+        <button class="btn-descrubrir" type="button">DESCUBRIR</button>
       </div>
     </div>
-    <div class="container-banner-two">
-     
-    </div>
+    <div class="container-banner-two"></div>
 
     <!--CONTENIDO-->
     <div class="contenido mt-5 mb-5" id="contenido">
@@ -87,16 +155,12 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
               ipsum dolor sit amet, consectetur
             </p>
-            <img
-              class="btn-principal mt-2 mb-5"
-              src="./img/BTN_principal_color.png"
-              alt=""
-            />
+            <button class="btn-princip"type="button">SUSCRIBIRSE</button>
           </div>
 
           <div class="col-12 col-md-7 col-sm-12">
             <div class="row">
-              <div class="col-12 col-md-2 mt-5 mr-5 ml-5">
+              <div class="col-12 col-md-2 mt-5 mr-logo">
                 <img
                   class="mr-3 mb-5"
                   src="./img/boletin-del-gomelo.png"
@@ -105,22 +169,22 @@
                 <img class="mr-3 mb-5" src="./img/live-show.png" alt="" />
               </div>
 
-              <div class="col-12 col-md-2 mt-5 ml-5 mr-5">
+              <div class="col-12 col-md-2 mt-5">
                 <img
-                  class="ml-3 mb-5"
+                  class="ml-3 mb-5 "
                   src="./img/juanois-experience.png"
                   alt=""
                 />
                 <img
-                  class="ml-3"
+                  class="ml-3 "
                   src="./img/politicamente-incorrecto.png"
                   alt=""
                 />
               </div>
 
-              <div class="col-12 col-md-2 mt-5 ml-5">
+              <div class="col-12 col-md-2 mt-5 ml-logo ">
                 <img
-                  class="ml-3 mt-5 friends"
+                  class="ml-3 mt-5 ml-logo friends"
                   src="./img/Grupo 314.png"
                   alt=""
                 />
@@ -132,8 +196,7 @@
     </div>
     <!--FIN CONTENIDO-->
     <!--MEMBRESIA-->
-    <div class="membresia " id="membresia">
-
+    <div class="membresia" id="membresia">
       <h2 class="mt-5 mb-3 text-center m-jp">MEMBRESÍA JP</h2>
       <p class="mb-3 text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -142,12 +205,15 @@
         sed do eiusmod tempor incididunt ut labore<br />
         et dolore magna aliqua.
       </p>
-  
 
-      <div class="cont-membresias m-5 ">
-        <div class="row">
-          <div class=" container-bronce text-center mr-3">
-            <img class="container-bronce-img mb-5 " src="./img/Recurso 1.png" alt="" />
+      <div class="cont-membresias align-items-center">
+        <div class="row justify-content-center">
+          <div class="container-bronce text-center">
+            <img
+              class="container-bronce-img mb-5"
+              src="./img/Recurso 1.png"
+              alt=""
+            />
             <h3 class="text-center">$36.000</h3>
             <h5>TRIMESTRAL</h5>
             <p class="mt-3">
@@ -158,8 +224,12 @@
             </p>
             <img class="mt-5 sus" src="./img/btn_principal_dark.png" alt="" />
           </div>
-          <div class="container-silver mr-3 text-center">
-            <img class="container-silver-img mb-5 " src="./img/Recurso 1.png" alt="" />
+          <div class="container-silver text-center">
+            <img
+              class="container-silver-img mb-5"
+              src="./img/Recurso 1.png"
+              alt=""
+            />
             <h3>$73.200</h3>
             <h5>SEMESTRAL</h5>
             <p class="mt-3">
@@ -170,8 +240,12 @@
             </p>
             <img class="mt-5 sus" src="./img/btn_principal_dark.png" alt="" />
           </div>
-          <div class="container-gold mr-3 text-center">
-            <img class="mb-5  container-gold-img" src="./img/Recurso 1.png" alt="" />
+          <div class="container-gold text-center">
+            <img
+              class="mb-5 container-gold-img"
+              src="./img/Recurso 1.png"
+              alt=""
+            />
             <h3>$131.760</h3>
             <h5>ANUAL</h5>
             <p class="mt-3">
@@ -183,7 +257,11 @@
             <img class="mt-5 sus" src="./img/btn_principal_dark.png" alt="" />
           </div>
           <div class="container-dark text-center">
-            <img class="mb-5 container-dark-img" src="./img/icon-black.png" alt="" />
+            <img
+              class="mb-5 container-dark-img"
+              src="./img/icon-black.png"
+              alt=""
+            />
             <h3>$12.200</h3>
             <h5>MENSUAL</h5>
             <p class="mt-3">
@@ -192,7 +270,7 @@
               sed do eiusmod tempor incididunt <br />
               ut labore et dolore.
             </p>
-            <img class="mt-5 sus" src="./img/BTN_principal_suscr.png" alt="" />
+            <button class=" mt-5 mb-5 btn-princip"type="button">SUSCRIBIRSE</button>
           </div>
         </div>
       </div>
@@ -211,36 +289,40 @@
       </div>
       <div class="album py-5">
         <div class="container">
-    
           <div class="row">
             <div class="col-md-4">
               <div class="mb-4 shadow-sm">
                 <div class="container-video">
-                 
-                    <div class="container-replay  ">
-                      <img src="./img/repl.PNG" alt="">
-                    </div>
-                  
-                
-                 
+                  <div class="container-replay">
+                    <img src="./img/repl.PNG" alt="" />
+                  </div>
                 </div>
                 <div class="card-body">
                   <h5>Titulo del video</h5>
-                  <p>Descripción corta que no supere los dos 
-                  renglones de longitud.</p>
-                  <div class="d-flex justify-content-between align-items-center views">
-                 <p class="mt-1">50 min</p>
-                 <div class="d-flex  ">
-                  <img class="icon-vi"src="./img/icon-visitas.png" alt="">
-                  <p class="mt-1">2k Views</p>
-                 </div>
-                 <div class="d-flex">
-                  <img class="icon-estrella mr-1"src="./img/icono-estrella.png" alt="">
-                  <p class="mt-1">4.7</p>
-                 </div>
-                 
-                 
-                   
+                  <p>
+                    Descripción corta que no supere los dos renglones de
+                    longitud.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center views"
+                  >
+                    <p class="mt-1">50 min</p>
+                    <div class="d-flex">
+                      <img
+                        class="icon-vi"
+                        src="./img/icon-visitas.png"
+                        alt=""
+                      />
+                      <p class="mt-1">2k Views</p>
+                    </div>
+                    <div class="d-flex">
+                      <img
+                        class="icon-estrella mr-1"
+                        src="./img/icono-estrella.png"
+                        alt=""
+                      />
+                      <p class="mt-1">4.7</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -248,31 +330,36 @@
             <div class="col-md-4">
               <div class="mb-4 shadow-sm">
                 <div class="container-video">
-                 
-                    <div class="container-replay  ">
-                      <img src="./img/repl.PNG" alt="">
-                    </div>
-                  
-                
-                 
+                  <div class="container-replay">
+                    <img src="./img/repl.PNG" alt="" />
+                  </div>
                 </div>
                 <div class="card-body">
                   <h5>Titulo del video</h5>
-                  <p>Descripción corta que no supere los dos 
-                  renglones de longitud.</p>
-                  <div class="d-flex justify-content-between align-items-center views">
-                 <p class="mt-1">50 min</p>
-                 <div class="d-flex  ">
-                  <img class="icon-vi"src="./img/icon-visitas.png" alt="">
-                  <p class="mt-1">2k Views</p>
-                 </div>
-                 <div class="d-flex">
-                  <img class="icon-estrella mr-1"src="./img/icono-estrella.png" alt="">
-                  <p class="mt-1">4.7</p>
-                 </div>
-                 
-                 
-                   
+                  <p>
+                    Descripción corta que no supere los dos renglones de
+                    longitud.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center views"
+                  >
+                    <p class="mt-1">50 min</p>
+                    <div class="d-flex">
+                      <img
+                        class="icon-vi"
+                        src="./img/icon-visitas.png"
+                        alt=""
+                      />
+                      <p class="mt-1">2k Views</p>
+                    </div>
+                    <div class="d-flex">
+                      <img
+                        class="icon-estrella mr-1"
+                        src="./img/icono-estrella.png"
+                        alt=""
+                      />
+                      <p class="mt-1">4.7</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -280,49 +367,52 @@
             <div class="col-md-4">
               <div class="mb-4 shadow-sm">
                 <div class="container-video">
-                 
-                    <div class="container-replay  ">
-                      <img src="./img/repl.PNG" alt="">
-                    </div>
-                  
-                
-                 
+                  <div class="container-replay">
+                    <img src="./img/repl.PNG" alt="" />
+                  </div>
                 </div>
                 <div class="card-body">
                   <h5>Titulo del video</h5>
-                  <p>Descripción corta que no supere los dos 
-                  renglones de longitud.</p>
-                  <div class="d-flex justify-content-between align-items-center views">
-                 <p class="mt-1">50 min</p>
-                 <div class="d-flex  ">
-                  <img class="icon-vi"src="./img/icon-visitas.png" alt="">
-                  <p class="mt-1">2k Views</p>
-                 </div>
-                 <div class="d-flex">
-                  <img class="icon-estrella mr-1"src="./img/icono-estrella.png" alt="">
-                  <p class="mt-1">4.7</p>
-                 </div>
-                 
-                 
-                   
+                  <p>
+                    Descripción corta que no supere los dos renglones de
+                    longitud.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center views"
+                  >
+                    <p class="mt-1">50 min</p>
+                    <div class="d-flex">
+                      <img
+                        class="icon-vi"
+                        src="./img/icon-visitas.png"
+                        alt=""
+                      />
+                      <p class="mt-1">2k Views</p>
+                    </div>
+                    <div class="d-flex">
+                      <img
+                        class="icon-estrella mr-1"
+                        src="./img/icono-estrella.png"
+                        alt=""
+                      />
+                      <p class="mt-1">4.7</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-    
-
           </div>
         </div>
       </div>
     </div>
     <!--FIN TOP-->
     <!--WALPAPPERS-->
-    <div class="walpapper container-fluid d-flex ">
-      <div class="row ">
-        <div class="container-wal-one  text-center col-12 col-md-6 col-sm-12">
-          <div class="container mt-3 ml-2 mr-5 wal-01">
+    <div class="walpapper container-fluid d-flex">
+      <div class="row">
+        <div class="container-wal-one col-12 col-md-6 col-sm-6 text-center">
+          <div class="mt-3 mb-3 ml-1 mr-3  wal-01">
             <h1 class="mt-5">WALPAPPERS</h1>
-            <img class="wp-01 mt-3 mb-3" src="./img/walpappers-01.png" alt="" />
+            <img class="wp-01 mt-3 mb-3" src="./img/wal-01.PNG" alt="" />
             <br />
             <img src="./img/BTN_principal_color.png" alt="" />
             <h1 class="mt-4">WHATSAPP STICKERS</h1>
@@ -330,23 +420,25 @@
               <div
                 class="row d-flex flex-row justify-content-center alig-items-center mb-5 mt-5"
               >
-                <div class="col-3">
+                <div class="col-12 col-md-3 col-sm-12">
                   <img src="./img/wpp-stickers.png" alt="" />
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-3 col-sm-12">
                   <img src="./img/wpp-stickers.png" alt="" />
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-3 col-sm-12">
                   <img src="./img/wpp-stickers.png" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container-wal-two text-center d-flex col-12 col-md-6 col-sm-12">
-          <div class="container mt-3 ml-2 mr-5 wal-01">
-          <h1>MERCHANDISING</h1>
-
+        <div
+          class="container-wal-two text-center d-flex col-12 col-md-6 col-sm-6 "
+        >
+          <div class="container mt-3 mb-3 ml-2 wal-01">
+            <h1 class="cont-h1">MERCHANDISING</h1>
+            <h2 class="cont-res">PROXIMAMENTE</h2>
           </div>
         </div>
       </div>
@@ -355,8 +447,6 @@
 
     <!--DUDAS-->
 
-
-   
     <div class="questions" id="questions">
       <div class="container">
         <h1 class="m-jp">
@@ -365,7 +455,7 @@
         </h1>
         <div class="row">
           <div class="mt-5 col-12 col-md-6 col-sm-12 questions-mm">
-            <p>
+            <p class="mt-2">
               ¿Cómo contactarme con JP Channel si tengo <br />
               una duda, queja, reclamo o sugerencia?
             </p>
@@ -382,7 +472,7 @@
         </div>
         <div class="row">
           <div class="mt-3 col-12 col-md-6 col-sm-12 questions-mm">
-            <p>¿Qué costo tiene el canal?</p>
+            <p class="mt-2">¿Qué costo tiene el canal?</p>
           </div>
           <div class="col-12 mt-3 col-md-6 col-sm-12 questions-m">
             <div class="d-flex">
@@ -396,7 +486,7 @@
         </div>
         <div class="row">
           <div class="mt-3 col-12 col-md-6 col-sm-12 questions-mm">
-            <p>¿Cómo puedo pagar la suscripción?</p>
+            <p class="mt-2">¿Cómo puedo pagar la suscripción?</p>
           </div>
           <div class="col-12 mt-3 col-md-6 col-sm-12 questions-m">
             <div class="d-flex">
@@ -410,12 +500,12 @@
         </div>
         <div class="row">
           <div class="mt-3 col-12 col-md-6 col-sm-12 questions-mm">
-            <p>¿A dónde se destina el pago de la suscripción?</p>
+            <p class="mt-2">¿A dónde se destina el pago de la suscripción?</p>
           </div>
           <div class="col-12 mt-3 col-md-6 col-sm-12 questions-m">
             <div class="d-flex">
               <img src="./img/li.png" alt="" />
-              <p class="ml-5">
+              <p class="ml-5 mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore.
               </p>
@@ -425,43 +515,49 @@
       </div>
     </div>
     <!--FIN DUDAS-->
+
+    <!--FOOTER-->
     <div class="footer">
-      <div class="container mt-5">
-        <div class="row mt-5">
-          <div class="col-12 col-md-8 col-sm-12 mt-5">
-            <div class="d-flex logo-footer">
-              <img class="mr-5"src="./img/logo-footer.png" alt="">
-              <div class="container firma f-img">
-                <img class="mb-5" src="./img/firma-jp.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Contactenos: <strong>info@heyjpchannel.com</strong></p>
-              </div>
-            
+
+  
+    <div class="container-footer">
+      <div class="container-footer-two logo-footer mt-5 mb-5">
+        <img class="" src="./img/logo-footer.png" alt="" />
+        <div class="container-footer-t">
+          <img class="f-img mb-5" src="./img/firma-jp.png" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            <br />
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p class="p-responsive">
+            Contactenos: <strong>info@heyjpchannel.com</strong>
+          </p>
+        </div>
+      </div>
+      <div class="separador">
+        <img class="mt-5 mb-5 mr-5" src="./img/separador.png" alt="" />
+        <div class="container-footer-t siguenos">
+          <div class="follow">
+            <h3 class="mt-5">Siguenos</h3>
+            <div class="container-footer-w">
+              <img class="ml-2" src="./img/instagram.png" alt="" />
+              <img class="ml-2" src="./img/facebook.png" alt="" />
+              <img class="ml-2" src="./img/twitter.png" alt="" />
             </div>
-   
           </div>
-          <div class="col-12 col-md-4 col-sm-12 mt-5">
-            <div class="d-flex ">
-              <img src="./img/separador.png" alt="">
-              <div class="container firma ">
-                <div class="container siguenos mb-5 ">
-                  <h3 class="ml-5">  Siguenos</h3>
-                <img class="ml-2"src="./img/instagram.png" alt="">
-                <img class="ml-2"src="./img/facebook.png" alt="">
-                <img  class="ml-2"src="./img/twitter.png" alt="">
-                </div>
-               
-                <p class="ml-5">Politicas de tratamiento <br>
-                  Autorización de datos personales<br>
-                   Términos y condiciones</p>
-              </div>
-            
-            </div>
-   
-          </div>
+
+          <p class="">
+            Politicas de tratamiento <br />
+            Autorización de datos personales<br />
+            Términos y condiciones
+          </p>
         </div>
       </div>
     </div>
-
+  </div>
+    <!--FIN FOOTER-->
   </body>
 </html>
