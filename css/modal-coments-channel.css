@@ -1,0 +1,63 @@
+.main-container-modal-coments {background-color: #0E1C2C; padding: 20px;}
+
+.main-central-container-modal {display: flex; justify-content: flex-end;}
+
+.modal-coments-channel {width: 500px; height: 600px; padding: 20px 15px; background-color: #213045; display: flex; flex-direction: column; margin-bottom: 30px;}
+.modal-header {display: flex; align-items: center; justify-content: space-between; padding: 0 15px 0 0px;}
+.modal-header span{color: #D9B361; font-family: 'Montserrat'; font-weight: bold; font-size: 26px; text-transform: uppercase;}
+
+.container-list-songs {display: flex; flex-direction: row; margin-top: 30px; width: 100%; overflow-y: scroll;}
+.container-list-songs::-webkit-scrollbar {-webkit-appearance: none;}
+.container-list-songs::-webkit-scrollbar:vertical {width: 5px;}
+.container-list-songs::-webkit-scrollbar:horizontal {height: 5px;}
+/* .container-list-songs::-webkit-scrollbar-track-piece {width: 1px;} */
+.container-list-songs::-webkit-scrollbar-track-thumb {width: 50px;}
+.container-list-songs::-webkit-scrollbar-button:increment, .container-list-songs::-webkit-scrollbar-button {display: none;}
+.container-list-songs::-webkit-scrollbar-thumb { background-color: #D9B361; border-radius: 20px; }
+.container-list-songs::-webkit-scrollbar-track { border-radius: 10px; }
+
+
+.container-list-songs div::first-child {width: 100%;}
+/* .container-list-songs div::last-child {width: 10%;} */
+
+.container-single-song {width: 100%; display: flex; margin-bottom: 10px;}
+.container-modal-avatar-song {width: 10%; margin: 0 25px 0 0;}
+
+.container-info-song {width: 90%; padding: 0 10px 0 0;}
+.container-info-song p {color: white; font-family: 'Montserrat'; font-weight: 400; font-size: 16px; margin-right: 20px; margin-top: 10px;}
+.nickname-song {color: #D9B361; font-family: 'Montserrat'; font-weight: bold; font-size: 16px; margin-right: 20px;}
+.date-song {color: #D9B361; font-family: 'Montserrat'; font-weight: 400; font-size: 14px; margin-right: 20px;}
+
+.container-form-public-commentary {margin-top: 50px;}
+.container-form-public-commentary input[type="text"] {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 20px; background-color: transparent; border: none; width: 100%; border-bottom: solid 1px #EDEBE8; padding-bottom: 5px; outline-style: none;}
+.container-form-public-commentary input[type="text"]:hover {outline-style: none;}
+.container-form-public-commentary input[type="text"]::placeholder {color: white; font-family: 'Montserrat'; font-weight: 400; font-size: 18px;}
+
+.container-cancel-comment {display: flex; justify-content: flex-end;}
+.container-cancel-comment input[value="Cancelar"] {background-color: transparent; border: none; color: white; text-transform: uppercase; font-size: 16px; font-weight: bold; font-family: 'Montserrat'; letter-spacing: 1.5px; cursor: pointer;}
+.container-cancel-comment input[value="Comentar"] {background-color: transparent; border: none; color: #D9B361; text-transform: uppercase; font-size: 16px; font-weight: bold; font-family: 'Montserrat'; letter-spacing: 1.5px; margin-left: 25px; cursor: pointer;}
+
+
+/* ****************************************************************************** */
+
+
+@media (max-width: 600px) {
+    .main-central-container-modal {justify-content: center;}
+    .modal-coments-channel {width: 450px; margin-top: 30px;}
+}
+
+@media (max-width: 480px) {
+    .modal-coments-channel {width: 90%;}
+    .container-modal-avatar-song {margin: 0 35px 0 0;}
+    .container-info-song p {font-size: 15px; margin-right: 20px;}
+    .nickname-song {font-size: 15px;}
+    .date-song {font-size: 13px;}
+}
+
+@media (max-width: 393px) {
+    .modal-coments-channel {width: 95%;}
+    .container-modal-avatar-song {margin: 0 45px 0 0;}
+    .container-info-song p {font-size: 15px; margin-right: 20px;}
+    .nickname-song {font-size: 15px;}
+    .date-song {font-size: 13px;}
+}

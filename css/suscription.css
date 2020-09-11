@@ -1,0 +1,51 @@
+.main-container-suscription {background-color: #0E1C2C; display: flex; justify-content: center; align-items: center; padding: 100px;}
+.inner-container-suscription {width: 50%; margin: 0 auto; display: flex; flex-direction: column; justify-content: center;}
+.logo-jp-suscription {width: 60%; margin: 0 auto 50px;}
+.suscription-value-title {color: #D9B361; font-size: 40px; text-align: center; text-transform: uppercase;font-weight: bold; font-family: Abhaya Libre; margin: 0;}
+.suscription-value-sutitle {color: #D9B361; font-size: 18px; text-align: center; font-weight: bold; font-family: Montserrat; margin: 0;}
+
+.main-container-form-suscription {display: flex; flex-direction: column; justify-content: center; width: 100%; margin: 20px auto 0; padding: 0;}
+
+.form-suscription-names {display: flex; justify-content: space-between;}
+.form-suscription-names input[type="text"] {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 48%; background-color: #213045; height: 40px; text-align: center; border: none;}
+.form-suscription-names input::placeholder {color: white; font-size: 14px; font-weight: 400; font-family: 'Montserrat';}
+
+.form-suscription-email {display: flex; justify-content: center; margin: 20px auto; width: 100%;}
+.form-suscription-email input[type="email"] {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; background-color: #213045; height: 40px; text-align: center; border: none;}
+.form-suscription-email input::placeholder {color: white; font-size: 14px; font-weight: 400; font-family: 'Montserrat';}
+
+.form-suscription-pw {display: flex; justify-content: space-between;}
+.form-suscription-pw input[type="password"] {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 48%; background-color: #213045; height: 40px; text-align: center; border: none;}
+.form-suscription-pw input::placeholder {color: white; font-size: 14px; font-weight: 400; font-family: 'Montserrat';}
+
+.container-policy-data {margin: 20px 0; width: 100%; cursor: pointer;}
+.container-policy-data div:first-child {margin-bottom: 10px;}
+.subcontainer-policy-data {width: 100%; display: flex; flex-direction: row; align-items: center;}
+.subcontainer-policy-data input[type="checkbox"] {background-color: transparent; border: solid 5px white;}
+.subcontainer-policy-data span{margin: 0 0 0 10px; color: #FFFFFF; font-size: 14px; font-weight: 400; font-family: 'Montserrat';}
+.subcontainer-policy-data span a{color: #FFFFFF;}
+
+/* .show-checkbox {background-image: url(../img/checkbox.png);}
+.container-policy-data > .custom-checkbox-input {display: none;}
+.container-policy-data > .custom-checkbox-show {background-color: transparent; border: solid 5px white;  display: inline-block; width: 15px;
+    height: 15px; margin-right: .5rem; background-size: cover;} */
+
+.container-btn-login {display: flex; align-items: center; justify-content: space-around; width: 90%; margin: 0 auto;}
+.container-btn-login img:first-child {width: 50%; height: 50px;}
+.container-btn-login img:nth-child(2) {width: 40%; height: 50px;}
+
+.container-donation-value {color: white; font-family: 'Montserrat'; font-size: 14px; font-weight: 400; text-align: center; margin-top: 20px;}
+
+@media (max-width: 804px) {
+  .main-container-suscription {padding: 50px;}
+  .inner-container-suscription {width: 100%;}
+}
+
+@media (max-width: 480px) {
+  .main-container-suscription {padding: 30px;}
+  .suscription-value-title {font-size: 30px;}
+}
+
+@media (max-width: 320px) {
+  .main-container-suscription {padding: 20px;}
+}
