@@ -1,0 +1,23 @@
+.main-container-suscription-login {background-color: #0E1C2C; display: flex; justify-content: center; align-items: center; padding: 100px;}
+.inner-container-suscription-login {width: 50%; margin: 0 auto; display: flex; flex-direction: column; justify-content: center;}
+.logo-jp-suscription-login {width: 60%; margin: 0 auto;}
+
+
+.main-container-form-suscription-login {display: flex; flex-direction: column; justify-content: center; width: 100%; margin: 20px auto 0; padding: 0;}
+
+
+.form-suscription-email-login {display: flex; justify-content: center; flex-direction: column; margin: 30px auto; width: 100%;}
+.form-suscription-email-login input[type="email"] {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; background-color: #213045; height: 40px; text-align: center; border: none; margin-bottom: 20px;}
+.form-suscription-email-login input::placeholder {color: white; font-size: 14px; font-weight: 400; font-family: 'Montserrat';}
+
+
+.form-suscription-email-login input[type="password"] {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; background-color: #213045; height: 40px; text-align: center; border: none;}
+.form-suscription-email-login input::placeholder {color: white; font-size: 14px; font-weight: 400; font-family: 'Montserrat';}
+
+
+
+.container-btn-login-suscribe {display: flex; justify-content: center; flex-direction: column; width: 80%; margin: 30px auto 0;}
+.container-btn-login-suscribe img:first-child {margin: 0 auto; width: 40%;}
+.container-btn-login-suscribe a:nth-child(2) {text-align: center; margin: 20px 0 30px; color: white; text-transform: uppercase; font-size: 16px; font-weight: bold; font-family: 'Montserrat'; letter-spacing: 1px;}
+.container-btn-login-suscribe img:last-child {margin: 0 auto; width: 40%;}
+.container-donation-value {color: white; font-family: 'Montserrat'; font-size: 14px; font-weight: 400; text-align: center; margin-top: 20px;}
